@@ -1,16 +1,33 @@
-## Hi there 👋
+# Initializing DFX
 
-<!--
-**maybelien/maybelien** is a ✨ _special_ ✨ repository because its `README.md` (this file) appears on your GitHub profile.
+Run dfx in separate terminal
 
-Here are some ideas to get you started:
+```
+dfx start --clean
+```
 
-- 🔭 I’m currently working on ...
-- 🌱 I’m currently learning ...
-- 👯 I’m looking to collaborate on ...
-- 🤔 I’m looking for help with ...
-- 💬 Ask me about ...
-- 📫 How to reach me: ...
-- 😄 Pronouns: ...
-- ⚡ Fun fact: ...
--->
+# Configuring dfx.json
+
+```
+{
+    "canisters": {
+      "vanilla-icp": {
+        "frontend": {
+          "entrypoint": "src/index.html"
+        },
+        "source": ["src"],
+        "type": "assets"
+      }
+    },
+    "dfx": "0.17.0",
+    "version": 1
+  }
+```
+
+# Deploying your landing page (frontend)
+
+Open VS Code and open a terminal instance and run:
+
+```
+dfx deploy
+```
